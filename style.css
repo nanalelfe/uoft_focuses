@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	background-color: white;
+}
+
+header {
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+	border-bottom: groove white;
+}
+
+
+header img{
+	width: 20%;
+	height: auto;
+	
+}
+
+
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li {
+	padding-left: 15px;
+}
