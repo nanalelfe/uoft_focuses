@@ -22,7 +22,7 @@ header {
     padding-right: 8%;
 	border-bottom: solid;
     border-width: 1px;
-    border-color: #E6E6FA;
+    border-color: #68EBDD;
     
 }
 
@@ -32,6 +32,11 @@ header img{
 	height: auto;	
 }
 
+header h1{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
 
 
 
@@ -39,7 +44,8 @@ header img{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	text-align: center;
+    text-align: center;
+
 }
 
 .menu ul li {
@@ -48,9 +54,9 @@ header img{
     color: #ffffff;
     border-bottom: solid;
     border-width: 1px;
-    border-color: #E6E6FA;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-color: #68EBDD;
+    padding-top: 31px;
+    padding-bottom: 30px;
 
 }
 
@@ -60,6 +66,9 @@ header img{
 
 .menu ul li a {
 	text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
 } 
 
 .menu ul li a:hover{
@@ -70,15 +79,29 @@ header img{
 	color: black;
 }
 
+.main_text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em;
+    
+}
+
+.main_text a:visited {
+    color: #248f8f;
+}
+
+.main_text a:hover {
+    color: #7AE2CF;
+}
 
 [class*="topic_"] {
     border-bottom: solid;
     border-width: 1px;
-    border-color: #E6E6FA;
+    border-color: #68EBDD;
     padding: 15px;
     padding-left: 20px;
 
 }
+
 
 ol {
     list-style-type: upper-roman;
@@ -95,18 +118,18 @@ ol {
         position: absolute;
         top: 0;
         left: 0;
-        width: 25%;
+        width: 20%;
         height: 200%;
         border-right: solid;
         border-width: 1px;
-        border-color: #E6E6FA;
+        border-color: #68EBDD;
     }
 
     .second_col {
          position:absolute;
          top:0;
          right:0;
-         width:75%;
+         width:80%;
     }
 
 }
@@ -117,19 +140,20 @@ ol {
         position: fixed;
         top: 0;
         left: 0;
-        width: 25%;
+        width: 20%;
         height: 200%;
         border-right: solid;
         border-width: 1px;
-        border-color: #E6E6FA;
+        border-color: #68EBDD;
     }
 
     .second_col {
          position:absolute;
          top:0;
          right:0;
-         width:75%;
+         width:80%;
     }
+
 
 
 }
