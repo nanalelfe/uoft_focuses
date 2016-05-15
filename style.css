@@ -37,15 +37,10 @@ header h1{
     
 }
 
-
-
-
 .menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-    text-align: center;
-
 }
 
 .menu ul li {
@@ -56,11 +51,47 @@ header h1{
     border-color: #68EBDD;
     padding-top: 31px;
     padding-bottom: 30px;
+    padding-left: 10%;
 
 }
 
 .menu ul li:hover {
 	background-color: #BBE8E4;
+}
+
+#ai {
+    background-image: url(ai.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 3em auto;
+}
+
+#game {
+    background-image: url(game.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 3em auto;
+}
+
+#comp_sys {
+    background-image: url(network.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 3em auto;
+}
+
+#human_comp {
+    background-image: url(human.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 3em auto;
+}
+
+#web {
+    background-image: url(web.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 2.5em auto;
 }
 
 .menu ul li a {
@@ -134,7 +165,9 @@ ul {
         border-right: solid;
         border-width: 1px;
         border-color: #68EBDD;
+        overflow:scroll
     }
+
 
     .second_col {
          position:absolute;
@@ -156,7 +189,9 @@ ul {
         border-right: solid;
         border-width: 1px;
         border-color: #68EBDD;
+        overflow:scroll
     }
+
 
     .second_col {
          position:absolute;
