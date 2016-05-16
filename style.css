@@ -22,7 +22,7 @@ header {
     padding-right: 8%;
 	border-bottom: solid;
     border-width: 1px;
-    border-color: #68EBDD;
+    border-color: #36d7b7;
     
 }
 
@@ -34,6 +34,8 @@ header img{
 
 header h1{
     font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     
 }
 
@@ -48,10 +50,11 @@ header h1{
     color: #ffffff;
     border-bottom: solid;
     border-width: 1px;
-    border-color: #68EBDD;
+    border-color: #36d7b7;
     padding-top: 31px;
     padding-bottom: 30px;
     padding-left: 10%;
+    padding-right: 20%
 
 }
 
@@ -63,35 +66,42 @@ header h1{
     background-image: url(ai.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
-    background-size: 3em auto;
+    background-size: 2em auto;
 }
 
 #game {
     background-image: url(game.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
-    background-size: 3em auto;
+    background-size: 2em auto;
 }
 
 #comp_sys {
     background-image: url(network.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
-    background-size: 3em auto;
+    background-size: 2em auto;
+}
+
+#comp_vis {
+    background-image: url(eye.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 2em auto;
 }
 
 #human_comp {
     background-image: url(human.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
-    background-size: 3em auto;
+    background-size: 2em auto;
 }
 
 #web {
     background-image: url(web.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
-    background-size: 2.5em auto;
+    background-size: 1.5em auto;
 }
 
 .menu ul li a {
@@ -126,7 +136,7 @@ header h1{
 [class*="topic_"] {
     border-bottom: solid;
     border-width: 1px;
-    border-color: #68EBDD;
+    border-color: #36d7b7;
     padding: 15px;
     padding-left: 20px;
 
@@ -164,8 +174,8 @@ ul {
         height: 200%;
         border-right: solid;
         border-width: 1px;
-        border-color: #68EBDD;
-        overflow:scroll
+        border-color: #36d7b7;
+        overflow:scroll;
     }
 
 
@@ -188,8 +198,8 @@ ul {
         height: 200%;
         border-right: solid;
         border-width: 1px;
-        border-color: #68EBDD;
-        overflow:scroll
+        border-color: #36d7b7;
+        overflow:scroll;
     }
 
 
@@ -199,7 +209,6 @@ ul {
          right:0;
          width:80%;
     }
-
 
 
 }
