@@ -105,18 +105,20 @@ header h1{
 }
 
 .menu ul li a {
+    color: black;
 	text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 
 } 
 
-.menu ul li a:hover{
-	color: #68EBDD;
-}
 
 .menu ul li a:visited{
 	color: black;
+}
+
+.menu ul li a:hover{
+    
 }
 
 .main_text {
@@ -133,7 +135,7 @@ header h1{
     color: #7AE2CF;
 }
 
-[class*="topic_"] {
+[id*="topic_"] {
     border-bottom: solid;
     border-width: 1px;
     border-color: #36d7b7;
