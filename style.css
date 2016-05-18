@@ -8,7 +8,6 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-
 }
 
 * {
@@ -25,8 +24,10 @@ header {
 }
 
 header img {
-    width: 10%;
-	height: auto;	
+    max-width: 100%;
+    display: block;
+	height: auto;
+    margin: auto;
 }
 
 header h1 {
@@ -175,12 +176,14 @@ footer #name {
     width: 100%;
 }
 
-@media only screen and (min-width: 500px) {
-    /* For tablets: */
+
+
+@media only screen and (min-width: 768px) {
+    /* For tablets and desktop: */
 
 
     .menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 20%;
@@ -199,6 +202,22 @@ footer #name {
          width:80%;
     }
 
+    /*.container:after {
+        content: " ";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .left, .right {
+        float: left;
+    }*/
+
+}
+@media only screen and (min-width: 980px) {
+    /* For desktop: */
+
     .container:after {
         content: " ";
         display: block;
@@ -211,11 +230,7 @@ footer #name {
         float: left;
     }
 
-}
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-
-    .menu {
+    /*.menu {
         position: fixed;
         top: 0;
         left: 0;
@@ -234,11 +249,6 @@ footer #name {
          width:80%;
     }
 
-    /*.left, .right {
-        display: inline-block;
-        vertical-align: top;
-    }*/
-
     .container:after {
         content: " ";
         display: block;
@@ -249,6 +259,6 @@ footer #name {
 
     .left. .right{
         float: left;
-    }
+    }*/
 
 }
