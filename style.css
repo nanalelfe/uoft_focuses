@@ -137,14 +137,23 @@ main a:hover, footer a:hover {
     color: #3EACA8;
 }
 
-/*main .topic_ai img {
-    width: auto; 
-    height: auto;
-}*/
+main .topic_ai {
+    width: 100%;
+}
+
+
 
 figure {
     overflow: hidden;
+    text-align: center;
 }
+
+/*main .topic_ai img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    vertical-align: middle;
+}*/
 
 [id*="topic_"] {
     border-bottom: solid;
@@ -187,7 +196,7 @@ footer #name {
         top: 0;
         left: 0;
         width: 20%;
-        height: 1500%;
+        height: 100%;
         border-right: solid;
         border-width: 1px;
         border-color: #FDD2B5;
@@ -201,6 +210,11 @@ footer #name {
          right:0;
          width:80%;
     }
+
+    /*.container {
+        vertical-align: center;
+    }*/
+
 
     /*.container:after {
         content: " ";
@@ -229,6 +243,7 @@ footer #name {
     .left, .right {
         float: left;
     }
+
 
     /*.menu {
         position: fixed;
@@ -262,3 +277,26 @@ footer #name {
     }*/
 
 }
+
+@media only screen and (min-width: 1200px) {
+    .image_container:after {
+        content: " ";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    .left_image, .right_image {
+        padding: 0;
+        float: left;
+    }
+
+    .right {
+        padding-left: 10%;
+    }
+
+}
+
+
