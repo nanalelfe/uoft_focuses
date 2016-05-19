@@ -3,8 +3,8 @@ html {
     width: 100%;
 }
 body {
-	margin: auto;
-	background-image: url("stucco.png");
+    margin: auto;
+    background-image: url("icons/stucco.png");
     position: relative;
     height: 100%;
     width: 100%;
@@ -15,10 +15,10 @@ body {
 }
 
 header {
-	padding: 10px;
-	text-align: center;
+    padding: 10px;
+    text-align: center;
     padding-right: 8%;
-	border-bottom: solid;
+    border-bottom: solid;
     border-width: 1px;
     border-color: #FDD2B5;
 }
@@ -26,7 +26,7 @@ header {
 header img {
     max-width: 100%;
     display: block;
-	height: auto;
+    height: auto;
     margin: auto;
 }
 
@@ -40,13 +40,13 @@ header h1 {
 
 
 nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-	padding: 0px;
+    padding: 0px;
     color: #ffffff;
     border-bottom: solid;
     border-width: 1px;
@@ -59,46 +59,46 @@ nav ul li {
 }
 
 nav ul li:hover {
-	background-color: #ACDBC9;
+    background-color: #ACDBC9;
 }
 
 nav #ai {
-    background-image: url(ai.png);
+    background-image: url(icons/ai.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-size: 2em auto;
 }
 
 nav #game {
-    background-image: url(game.png);
+    background-image: url(icons/game.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-size: 2em auto;
 }
 
 nav #comp_sys {
-    background-image: url(network.png);
+    background-image: url(icons/network.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-size: 2em auto;
 }
 
 nav #comp_vis {
-    background-image: url(eye.png);
+    background-image: url(icons/eye.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-size: 2em auto;
 }
 
 nav #human_comp {
-    background-image: url(human.png);
+    background-image: url(icons/human.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-size: 2em auto;
 }
 
 nav #web {
-    background-image: url(web.png);
+    background-image: url(icons/web.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-size: 1.5em auto;
@@ -106,13 +106,13 @@ nav #web {
 
 nav ul li a {
     color: black;
-	text-decoration: none;
+    text-decoration: none;
     font-family: 'Rokkitt', serif;
     font-weight: bold;
 } 
 
 nav ul li a:visited{
-	color: #4F4F4F;
+    color: #4F4F4F;
 }
 
 main, footer {
