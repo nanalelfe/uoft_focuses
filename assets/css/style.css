@@ -1,18 +1,55 @@
+/* The style of the site has been inspired
+ * by the course website. However, this is my own
+ * implementation of the design, and I am confident
+ * that the code is different.  
+ */
+
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
     width: 100%;
 }
+
+/* GENERAL STYLING */
+
 body {
     margin: auto;
-    background-image: url("icons/stucco.png");
+    background-image: url("../images/stucco.png");
     position: relative;
     height: 100%;
     width: 100%;
 }
 
-* {
-    box-sizing: border-box;
+[id*="topic_"] {
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #FDD2B5;
+    padding: 15px;
+    padding-left: 20px;
 }
+
+figure {
+    overflow: hidden;
+    text-align: center;
+}
+
+h2 {
+    color: #4F4F4F;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+/* HEADER */
 
 header {
     padding: 10px;
@@ -23,173 +60,156 @@ header {
     border-color: #FDD2B5;
 }
 
-header img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: auto;
-}
+    header img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
 
-header h1 {
-    font-family: 'Rokkitt', serif;
-    font-weight: bold;
-    font-size: 2.5em;
-    color: #4F4F4F;
-    
-}
+    header h1 {
+        font-family: 'Rokkitt', serif;
+        font-weight: bold;
+        font-size: 2.5em;
+        color: #4F4F4F;
+    }
 
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+/* MENU */
 
-nav ul li {
-    padding: 0px;
-    color: #ffffff;
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: #FDD2B5;
-    padding-top: 31px;
-    padding-bottom: 30px;
-    padding-left: 10%;
-    padding-right: 20%
+nav {
 
 }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-nav ul li:hover {
-    background-color: #ACDBC9;
-}
+        nav ul li {
+            padding: 0px;
+            color: #ffffff;
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: #FDD2B5;
+            padding-top: 31px;
+            padding-bottom: 30px;
+            padding-left: 10%;
+            padding-right: 20%
 
-nav #ai {
-    background-image: url(icons/ai.png);
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-    background-size: 2em auto;
-}
+        }
 
-nav #game {
-    background-image: url(icons/game.png);
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-    background-size: 2em auto;
-}
+        nav ul li:hover {
+            background-color: #ACDBC9;
+        }
 
-nav #comp_sys {
-    background-image: url(icons/network.png);
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-    background-size: 2em auto;
-}
+            nav ul li a {
+                color: black;
+                text-decoration: none;
+                font-family: 'Rokkitt', serif;
+                font-weight: bold;
+            } 
 
-nav #comp_vis {
-    background-image: url(icons/eye.png);
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-    background-size: 2em auto;
-}
+            nav ul li a:visited{
+                color: #4F4F4F;
+            }
 
-nav #human_comp {
-    background-image: url(icons/human.png);
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-    background-size: 2em auto;
-}
+    /* The positioning of the icons for every menu section */        
 
-nav #web {
-    background-image: url(icons/web.png);
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-    background-size: 1.5em auto;
-}
+    nav #ai {
+        background-image: url(../images/icons/ai.png);
+        background-position: 95% 50%;
+        background-repeat: no-repeat;
+        background-size: 2em auto;
+    }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-family: 'Rokkitt', serif;
-    font-weight: bold;
-} 
+    nav #game {
+        background-image: url(../images/icons/game.png);
+        background-position: 95% 50%;
+        background-repeat: no-repeat;
+        background-size: 2em auto;
+    }
 
-nav ul li a:visited{
-    color: #4F4F4F;
-}
+    nav #comp_sys {
+        background-image: url(../images/icons/network.png);
+        background-position: 95% 50%;
+        background-repeat: no-repeat;
+        background-size: 2em auto;
+    }
 
-main, footer {
+    nav #human_comp {
+        background-image: url(../images/icons/human.png);
+        background-position: 95% 50%;
+        background-repeat: no-repeat;
+        background-size: 2em auto;
+    }
+
+    nav #web {
+        background-image: url(../images/icons/web.png);
+        background-position: 95% 50%;
+        background-repeat: no-repeat;
+        background-size: 1.5em auto;
+    }
+
+
+/* MAIN */
+
+main {
     font-family: 'Rokkitt', serif;
     font-weight: 400;
     color: #272821;
 }
 
-h2 {
-    color: #4F4F4F;
-}
+    main a {
+        color: #248f8f;
+    }
 
-main a, footer a {
-    color: #248f8f;
-}
+    main a:visited {
+        color: #528585;
+    }
 
-main a:visited, footer a:visited {
-    color: #528585;
-}
+    main a:hover {
+        color: #3EACA8;
+    }
 
-main a:hover, footer a:hover {
-    color: #3EACA8;
-}
-
-main .topic_ai {
-    width: 100%;
-}
-
-
-
-figure {
-    overflow: hidden;
-    text-align: center;
-}
-
-/*main .topic_ai img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    vertical-align: middle;
-}*/
-
-[id*="topic_"] {
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: #FDD2B5;
-    padding: 15px;
-    padding-left: 20px;
-}
-
-
-ol {
-    list-style-type: upper-roman;
-}
+/* FOOTER */
 
 footer {
+    font-family: 'Rokkitt', serif;
+    font-weight: 400;
     font-size: 0.9em;
+    color: #272821;
 }
 
-ul {
-    list-style-type: square;
-}
+    footer a {
+        color: #248f8f;
+    }
 
-footer #name {
-    font-weight: bold;
-}
 
-/* Smartphones*/
+    footer a:visited {
+        color: #528585;
+    }
+
+
+    footer a:hover {
+        color: #3EACA8;
+    }
+
+    footer #name {
+        font-weight: bold;
+    }
+
+
+/* RESPONSIVE DESIGN */
+
+/* For mobile phone (vertical view): 320x480; */
 [class*="divider"] {
     width: 100%;
 }
 
-
-
-@media only screen and (min-width: 768px) {
-    /* For tablets and desktop: */
-
+/* Mobile phone (horizontal view) and tablet (vertical view): 
+   480x320, 768x1024 */
+@media only screen and (min-width: 480px) {
 
     .menu {
         position: fixed;
@@ -211,26 +231,10 @@ footer #name {
          width:80%;
     }
 
-    /*.container {
-        vertical-align: center;
-    }*/
-
-
-    /*.container:after {
-        content: " ";
-        display: block;
-        clear: both;
-        height: 0;
-        visibility: hidden;
-    }
-
-    .left, .right {
-        float: left;
-    }*/
-
 }
-@media only screen and (min-width: 980px) {
-    /* For desktop: */
+
+/* For tablet (horizontal view): 1024x768 */
+@media only screen and (min-width: 1024px) {
 
     .container:after {
         content: " ";
@@ -242,43 +246,14 @@ footer #name {
 
     .left, .right {
         float: left;
+        width: 50%;
     }
-
-
-    /*.menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20%;
-        height: 1500%;
-        border-right: solid;
-        border-width: 1px;
-        border-color: #FDD2B5;
-        overflow:scroll;
-    }
-
-    .second_col {
-         position:absolute;
-         top:0;
-         right:0;
-         width:80%;
-    }
-
-    .container:after {
-        content: " ";
-        display: block;
-        clear: both;
-        height: 0;
-        visibility: hidden;
-    }
-
-    .left. .right{
-        float: left;
-    }*/
 
 }
 
-@media only screen and (min-width: 1200px) {
+/* For desktop: 1280x980 */
+@media only screen and (min-width: 1280px) {
+
     .image_container:after {
         content: " ";
         display: block;
@@ -289,12 +264,8 @@ footer #name {
     }
 
     .left_image, .right_image {
-        padding: 0;
         float: left;
-    }
-
-    .right {
-        padding-left: 10%;
+        width: 40%;
     }
 
 }
